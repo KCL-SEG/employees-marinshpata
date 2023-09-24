@@ -57,9 +57,9 @@ class SalaryEmployee(Employee):
         if self.type == 1:
             return f'{self.name} works on a monthly salary of {self.salary}. Their total pay is {self.get_pay()}.'
         elif self.type == 2:
-            return f'{self.name} works on a monthly salary of {self.salary} and recieves a bonus commission of {self.bonusCommission}. Their total pay is {self.get_pay()}.'
+            return f'{self.name} works on a monthly salary of {self.salary} and receives a bonus commission of {self.bonusCommission}. Their total pay is {self.get_pay()}.'
         elif self.type == 3:
-            return f'{self.name} works on a monthly salary of {self.salary} and recieves a commission for {self.contractNumber} contract(s) at {self.contractCommission}/contract. Their total pay is {self.get_pay()}.'
+            return f'{self.name} works on a monthly salary of {self.salary} and receives a commission for {self.contractNumber} contract(s) at {self.contractCommission}/contract. Their total pay is {self.get_pay()}.'
         
 class HourlyEmployee(Employee):  
     def __init__(self, name, type):
@@ -86,9 +86,10 @@ class HourlyEmployee(Employee):
         if self.type == 1:
             return f'{self.name} works on a contract of {self.hoursWorked} hours at {self.hourlyPay}/hour. Their total pay is {self.get_pay()}.'
         elif self.type == 2:
-            return f'{self.name} works on a contract of {self.hoursWorked} hours at {self.hourlyPay}/hour and recieves a bonus commission of {self.bonusCommission}. Their total pay is {self.get_pay()}.'
+            return f'{self.name} works on a contract of {self.hoursWorked} hours at {self.hourlyPay}/hour and receives a bonus commission of {self.bonusCommission}. Their total pay is {self.get_pay()}.'
         elif self.type == 3:
-            return f'{self.name} works on a contract of {self.hoursWorked} hours at {self.hourlyPay}/hour and recieves a commission for {self.contractNumber} contract(s) at {self.contractCommission}/contract. Their total pay is {self.get_pay()}.'
+            return f'{self.name} works on a contract of {self.hoursWorked} hours at {self.hourlyPay}/hour and receives a commission for {self.contractNumber} contract(s) at {self.contractCommission}/contract. Their total pay is {self.get_pay()}.'
+
 
             
 
